@@ -1,0 +1,19 @@
+[project]
+name = "llm-bean"
+version = "0.2"
+description = "LLM plugin for recording thoughts"
+readme = "README.md"
+authors = [{name = "Randall Bohn"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm>=0.9"
+]
+
+[project.entry-points.llm]
+bean = "llm_bean"
+
+[project.optional-dependencies]
+test = ["pytest"]
